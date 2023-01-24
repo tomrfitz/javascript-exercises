@@ -1,8 +1,7 @@
 const reverseString = function (str) {
+  let chars = str.split("");
   let result = "";
-  for (let i = str.length - 1; i >= 0; i--) {
-    result += str[i];
-  }
+  result = chars.reverse().join("");
   return result;
 };
 
