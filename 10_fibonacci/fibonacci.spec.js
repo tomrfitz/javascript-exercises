@@ -1,8 +1,8 @@
 const fibonacci = require("./fibonacci");
 
 describe("fibonacci", () => {
-  test("4th fibonacci number is 3", () => {
-    expect(fibonacci(4)).toBe(3);
+  test("1st fibonacci number is 1", () => {
+    expect(fibonacci(1)).toBe(1);
   });
   test("6th fibonacci number is 8", () => {
     expect(fibonacci(6)).toBe(8);

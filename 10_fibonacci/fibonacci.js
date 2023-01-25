@@ -3,11 +3,15 @@ const fibonacci = function (n) {
   if (num < 0) {
     return "OOPS";
   }
-  const fibonacci = [1, 1];
-  for (i = 2; i <= num; i++) {
-    fibonacci.push(fibonacci[i - 1] + fibonacci[i - 2]);
+  let fiboOne = 0;
+  let fiboTwo = 1;
+  let sum = 0;
+  for (i = 0; i < num; i++) {
+    sum = fiboOne + fiboTwo;
+    fiboOne = fiboTwo;
+    fiboTwo = sum;
   }
-  return fibonacci[num - 1];
+  return fiboOne;
 };
 
 // Do not edit below this line
